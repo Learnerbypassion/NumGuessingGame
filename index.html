@@ -10,15 +10,38 @@
 
 <body>
     <div id="main">
-        <div class="input">
-            <input type="number" id="number" placeholder="Enter any number...">
-            <button type="submit" onclick="input()">submit</button>
-        </div>
-        <div class="output">
-            <div class="hint" id="msg"></div>
+        <div class="gamebox">
+            <div class="input">
+                <input type="number" id="number" placeholder="">
+            </div>
+            <div class="output">
+                <div class="hint" id="msg">
+                    <p></p>
+                </div>
+            </div>
+            <div class="numbers">
+                <button class="numpad inPut">7</button>
+                <button class="numpad inPut">8</button>
+                <button class="numpad inPut">9</button>
+                <button class="numpad inPut">4</button>
+                <button class="numpad inPut">5</button>
+                <button class="numpad inPut">6</button>
+                <button class="numpad inPut">1</button>
+                <button class="numpad inPut">2</button>
+                <button class="numpad inPut">3</button>
+                <button class="numpad inPut"><img
+                        src="https://static.vecteezy.com/system/resources/previews/019/858/320/non_2x/backspace-flat-color-outline-icon-free-png.png"
+                        alt="" class="switch" id="undo-btn"></button>
+                <button class="numpad inPut">0</button>
+
+                <button type="submit" class="numpad" onclick="input()"><img
+                        src="https://png.pngtree.com/png-vector/20230330/ourmid/pngtree-click-the-submit-icon-button-vector-png-image_6674608.png"
+                        alt="" class="switch" id="submit"></button>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
+</body>
 </body>
 
 </html>
