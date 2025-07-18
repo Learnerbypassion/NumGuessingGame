@@ -9,7 +9,19 @@
 </head>
 
 <body>
-    <div id="main">
+    <div id="rulesScreen" onclick="startGame()">
+        <h2>📜 Game Rules</h2>
+        <p>
+            Welcome to the Number Guessing Game!<br>
+            - Guess the correct number which is selected by the computer <br>
+            - The number is between 1-100.<br>
+            - You’ll get hints after each guess.<br><br>
+            Tap anywhere or click the button below to start!
+        </p>
+        <button id="startBtn" onclick="startGame(event)">Start Game</button>
+    </div>
+    <canvas id="starCanvas"></canvas>
+    <div id="main" style="display: none;">
         <div class="gamebox">
             <div class="input">
                 <input type="number" id="number" placeholder="">
@@ -20,21 +32,21 @@
                 </div>
             </div>
             <div class="numbers">
-                <button class="numpad inPut">7</button>
-                <button class="numpad inPut">8</button>
-                <button class="numpad inPut">9</button>
-                <button class="numpad inPut">4</button>
-                <button class="numpad inPut">5</button>
-                <button class="numpad inPut">6</button>
-                <button class="numpad inPut">1</button>
-                <button class="numpad inPut">2</button>
-                <button class="numpad inPut">3</button>
-                <button class="numpad inPut"><img
+                <button class="numpad inPut btn">7</button>
+                <button class="numpad inPut btn">8</button>
+                <button class="numpad inPut btn">9</button>
+                <button class="numpad inPut btn">4</button>
+                <button class="numpad inPut btn">5</button>
+                <button class="numpad inPut btn">6</button>
+                <button class="numpad inPut btn">1</button>
+                <button class="numpad inPut btn">2</button>
+                <button class="numpad inPut btn">3</button>
+                <button class="numpad inPut btn" id="undo-btn"><img
                         src="https://static.vecteezy.com/system/resources/previews/019/858/320/non_2x/backspace-flat-color-outline-icon-free-png.png"
-                        alt="" class="switch" id="undo-btn"></button>
-                <button class="numpad inPut">0</button>
+                        alt="" class="switch"></button>
+                <button class="numpad inPut btn">0</button>
 
-                <button type="submit" class="numpad" onclick="input()"><img
+                <button type="submit" class="numpad btn" onclick="input()"><img
                         src="https://png.pngtree.com/png-vector/20230330/ourmid/pngtree-click-the-submit-icon-button-vector-png-image_6674608.png"
                         alt="" class="switch" id="submit"></button>
             </div>
@@ -42,6 +54,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</body>
-
 </html>
