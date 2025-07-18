@@ -49,5 +49,5 @@ inPuts.forEach((e)=>{
         s += e.innerText;
         document.querySelector("input").value=s;
         
-    })
-})
+    });
+});
